@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="PONG 2"
+run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1260
+window/size/viewport_height=960
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="canvas_items"
 
 [dotnet]
 

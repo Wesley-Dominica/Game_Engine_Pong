@@ -14,6 +14,11 @@ config/name="PONG 2"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=420
+window/size/viewport_height=320
+
 [dotnet]
 
 project/assembly_name="PONG 2"

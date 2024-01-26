@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgyy5cy88vq6b"]
+
+[ext_resource type="Script" path="res://Character Scenes/player_bar.cs" id="1_hnb37"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0fl5f"]
+size = Vector2(800000, 4e+06)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3b64l"]
+size = Vector2(8, 40)
+
+[node name="PlayerBar" type="CharacterBody2D"]
+script = ExtResource("1_hnb37")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(387, 36)
+scale = Vector2(1e-05, 1e-05)
+shape = SubResource("RectangleShape2D_0fl5f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(387, 36)
+texture = SubResource("PlaceholderTexture2D_3b64l")
